@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header p 
+    {
+        color:gray;
+    }
+    .header .intro 
+    {
+        color:blue;
+    }
+    .header #register 
+    {
+        color: yellow;
+    }
+
+
+    .news > p
+    {
+        color:red;
+    }
+
+    .news p
+    {
+        color:green;
+    }
+
+    .news h2 + p
+    {
+        color:brown;
+    }
+
+
+    .nature
+    {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdeZ2NIq2TddKBHb3jXFEJDStlWbpvSJhWHFfeHwOXA&s=10");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-color: black;
+    }
+
+</style>
+<body>
+    <section class="header">
+    <h1>khóa học Front-End</h1>
+    <p class="intro">Bắt đầu với CSS</p>
+    <p>Nội dung chính</p>
+    <a id="register" href="#">Đăng ký</a>
+    <!-- chọn toàn bộ thẻ p trong body để tô màu xám-->
+    <!-- chọn thẻ p có class intro để tô màu xanh vì class > tag selectors -->
+    <!-- chọn thẻ p có id register để tô màu vàng vì id > tag selectors -->
+    </section>
+
+
+    <section class="news">
+        <h2>Tin tức</h2>
+        <p>Tin nổi bật</p>
+        <article><p>Tin trong bài</p></article>
+        <p>Tin tiếp theo</p>
+        <!-- Rule 1 (news > p): chọn 2 phần tử p trực tiếp con của .news -->
+        <!-- Rule 2 (news p): chọn 3 phần tử p trong .news -->
+        <!-- Rule 3 (news h2 + p ) chọn 1 phần tử p ngay sau h2 -->
+    </section>
+
+
+    <section class="nature">
+        <h2>KHÁM PHÁ<br>THIÊN NHIÊN</h2>
+        <button>XEM THÊM -></button>
+    </section>
+
+</body>
+</html>
